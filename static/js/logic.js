@@ -65,6 +65,9 @@ fetch(earthquakeUrl)
             let depths = [-10, 10, 30, 50, 70, 90];
             let colors = ["#a3f600", "#dcf400", "#f7db11", "#fdb72a", "#fca35d", "#ff5f65"];
 
+            // Title for the legend
+            div.innerHTML += "<h4>Depth (km)</h4>";
+
             // Loop through depth intervals to generate labels
             for (let i = 0; i < depths.length; i++) {
                 div.innerHTML +=
